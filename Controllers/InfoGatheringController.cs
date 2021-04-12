@@ -59,7 +59,7 @@
             var gatheredInfo = new GatheredInfo();
             gatheredInfo.DomainInfo = await this.rdapApi.GetDomainInfo(ipOrDomain);
 
-            gatheredInfo.PingInfo = await this.pingApi.Get(ipOrDomain);
+            //gatheredInfo.PingInfo = await this.pingApi.Get(ipOrDomain);
 
             gatheredInfo.IpInfo = await this.rdapApi.GetIPInfo(gatheredInfo.PingInfo.Address);
             // var responseList = servicesToQuery.Select(async service =>
